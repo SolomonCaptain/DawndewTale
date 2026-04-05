@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "曦露物语",
+  "productName": "DawnDew Tale",
   "version": "0.1.0",
   "identifier": "com.istaroth.dawndewtale",
   "build": {
