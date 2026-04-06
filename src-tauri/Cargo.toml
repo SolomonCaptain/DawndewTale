@@ -1,8 +1,8 @@
 [package]
 name = "dawndewtale"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Tauri App"
-authors = ["you"]
+authors = ["Istaroth"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -23,4 +23,12 @@ tauri-plugin-opener = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 tauri-plugin-sql = { version = "2", features = ["sqlite"] }
-kreuzberg = "4.7.2"
+kreuzberg = { version = "4.0.0-rc.11", features = ["pdf"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-store = "2"
+fastembed = "5.13.0"
+tokio = { version = "1.51.0", features = ["full"] }
+anyhow = "1.0.102"
+thiserror = "2.0.18"
+sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite"] }

@@ -1,0 +1,2 @@
+*.onnx filter=lfs diff=lfs merge=lfs -text
+src-tauri/assets/models/** filter=lfs diff=lfs merge=lfs -text

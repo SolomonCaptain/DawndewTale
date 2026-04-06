@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# BitFun snapshot data - auto managed
+.bitfun/
