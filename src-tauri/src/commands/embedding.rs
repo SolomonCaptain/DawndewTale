@@ -123,6 +123,7 @@ pub async fn semantic_search(
         .connect(&db_url)
         .await
         .map_err(|e| format!("数据库连接失败: {}", e))?;
+    pool.close().await;
     
     // 查询所有带嵌入向量的文档块
     let chunks: Vec<(String, String, String, Vec<u8>, u32)> = sqlx::query_as(
